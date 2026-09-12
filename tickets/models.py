@@ -32,4 +32,7 @@ class Ticket:
         if estado_anterior is not None:
             self.estado_actual = estado_anterior
         return self.estado_actual
-    # cambio-1
+
+
+# cambio-1
+# cambio-2
