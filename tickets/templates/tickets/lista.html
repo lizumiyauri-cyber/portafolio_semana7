@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h2>Lista de tickets</h2>
+<ul>
+{% for t in tickets %}
+    <li>{{ t }} — {{ t.categoria }}
+        <a href="{% url 'editar_ticket' t.pk %}">Editar</a></li>
+{% empty %}
+    <li>No hay tickets todavía.</li>
+{% endfor %}
+</ul>
+{% endblock %}
